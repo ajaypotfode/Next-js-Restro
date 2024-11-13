@@ -1,0 +1,231 @@
+.cart-Container{
+    /* height:100vh; */
+    min-height: 100vh;
+    max-height: fit-content;
+    width:100%;
+    background-color: black;
+    color: white;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background: fixed; */
+}
+/* .cart-items{
+    display: flex;
+    background: #13131a;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px; */
+    /* border-bottom: 0.2rem solid #ffc107; */
+    /* scroll-margin: -100px; */
+    /* z-index: 100; */
+  /* } */
+/* .items{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+.items img{
+    border-radius: 50%;
+}
+.items label{
+    font-weight:bolder;
+    font-size: 2rem;
+}
+.items input{
+    width:50px;
+    background: none;
+    color: white;
+    border:0.5px solid #ffc107;
+}
+.items .items-value{
+    font-size: 1.8rem;
+}
+.cart-footer{
+    display: flex;
+    background: #13131a;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:80%;
+    padding:1% 10%;
+    position:sticky;
+    top: 100vh;
+    bottom: 0px;
+}
+.remove-btn{
+   color: rgba(250, 0, 0, 0.452);
+   background: none;
+   border: 0.1rem solid #ffc107;
+   padding: 5px;
+}
+
+.bill-container{
+    width:fit-content;
+    height:fit-content;
+    background-color: #000000;
+    border: 0.2rem solid #ffc107;
+    padding:1rem 8rem ;
+    position:fixed;
+    right:40%;
+    top:20vh;
+    visibility: hidden;
+    opacity: 0;
+}
+.bill-Items{
+    display:flex;
+    flex-direction: column;
+}
+.bill-Items .items{
+    display: flex;
+      list-style: none;
+      justify-content: space-around;
+      color: #fff;
+      gap: 4rem; */
+      /* right: 0; */
+/* }
+.bill-container .heading{
+    font-size:x-large;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border-top:0.1rem solid  #ffc107 ;
+    padding-top:1.3rem ;
+}
+.cancel-btn{
+    position: relative;
+    right:-50%;
+    bottom:50%;
+    color: #fff;
+    background: none;
+ }
+.active-blur{
+    filter: blur(2px);
+    transition: 0.2s;
+}
+
+ .active{
+    opacity: 1;
+    visibility:visible;
+    transition: 0.2s;
+ }
+ .address{
+    width: 60%;
+    height: fit-content;
+    padding: 2%;
+    border: 1px solid red;
+    margin: 100px auto;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    background-color: #000000;
+
+ }
+ */
+
+ /* new Code */
+/* .action-btn{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+} */
+
+
+ .cart-items {
+    border-collapse: collapse;
+    width: 80%;
+    /* max-width: 600px; Adjust as per your design */
+    background-color: #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+.cart-items thead{
+    border-bottom: 0.2rem solid #ffc107 ;
+    font-size: large;
+    
+}
+.cart-items tbody tr{
+    /* border-bottom: 0.2rem solid #ffc107 ; */
+    /* font-size: larger; */
+    font-size: 1.6rem;
+
+}
+.cart-items tbody tr input{
+    background-color: transparent;
+    border:0.1rem solid #ffc107 ;
+    width: 50px;
+}
+.cart-items th,
+.cart-items td {
+    padding: 10px;
+    text-align:center;
+    /* border: 1px solid red; */
+    /* display: flex;
+    align-items: center; */
+    /* margin: 0px; */
+    /* width: fit-content; */
+}
+
+.item-name,.action-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.action-btn span{
+    border: 1px solid rgb(41, 193, 87);
+    padding: 0.5rem 2rem; 
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+.action-btn span:hover{
+   border: 2px solid rgb(41, 193, 87);
+}
+.action-btn #delete-btn{
+    border: 1px solid red !important;
+}
+.action-btn #delete-btn:hover{
+    border: 2px solid red !important;
+}
+.items-value {
+    margin-left: 10px;
+}
+
+.cart-footer{
+    display: flex;
+    background: #13131a;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: large;
+    align-items: center;
+    width:80%;
+    padding:1% 10%;
+    position:sticky;
+    top: 100vh;
+    bottom: 0px;
+}
+
+.items label{
+    font-weight:bolder;
+    font-size: 2rem;
+    color: #ffc107;
+}
+.items input{
+    width:50px;
+    background: none;
+    color: white;
+    border:0.5px solid #ffc107;
+}
+.items .items-value{
+    font-size: 1.8rem;
+}
+.cart-footer button{
+    font-size:2rem !important ;
+}
