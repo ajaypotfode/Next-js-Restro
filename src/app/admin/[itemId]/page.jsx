@@ -15,7 +15,7 @@ const UpdateMenu = ({ params }) => {
   useEffect(() => {
     (async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/foodItem/"+id)
+        const res = await axios.get(`${process.env.NEXT_PUBLIC_API_KEY}/${id}`)
         const result = await res.data
         setUpdatedData(result)
       } catch (error) {
@@ -29,7 +29,7 @@ const UpdateMenu = ({ params }) => {
     e.preventDefault()
     try {
       setLoading(true)
-      const res = await axios.put("http://localhost:4000/api/foodItem/" + id, updatedData)
+      const res = await axios.put(`${process.env.NEXT_PUBLIC_API_KEY}/${id}`, updatedData)
       alert("Data updated successfully")
       setLoading(false)
       router.push('/admin');
