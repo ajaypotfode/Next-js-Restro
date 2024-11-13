@@ -54,7 +54,7 @@ const ContextProvider = ({ children }) => {
 
       const updatedFoodItem = { ...foodItem, image: imageUrl };
 
-      const res = await axios.post(`${process.env.NEXT_PUBLIC_API_KEY}`, updatedFoodItem);
+      const res = await axios.post(`${process.env.NEXT_PUBLIC_DOMAIN}api/foodItem`, updatedFoodItem);
       setLoading(false)
       alert("Data submitted successfully");
       setFoodItem({})
@@ -78,7 +78,7 @@ const ContextProvider = ({ children }) => {
       (async () => {
         try {
           setLoading(false)
-          const res = await axios.get(`${process.env.NEXT_PUBLIC_API_KEY}`)
+          const res = await axios.get(`${process.env.NEXT_PUBLIC_DOMAIN}api/foodItem`)
           const data = await res.data  
           setFoodData(data)
 
@@ -101,7 +101,7 @@ const ContextProvider = ({ children }) => {
   const handleDelete = async (id) => {
     try {
       setLoading(true)
-      const res = await axios.delete(`${process.env.NEXT_PUBLIC_API_KEY}/${id}`)  
+      const res = await axios.delete(`${process.env.NEXT_PUBLIC_DOMAIN}api/foodItem/${id}`)  
       alert("data deleted Successfully")
       setLoading(false)
     } catch (error) {
